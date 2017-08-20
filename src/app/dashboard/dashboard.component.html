@@ -1,0 +1,9 @@
+<h3>Principais Contatos</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let contato of contatos" [routerLink]="['/detail', contato.id]" class="col-1-4">
+        <div class="module hero">
+            <h4>{{contato.name}}</h4>
+        </div>
+    </a>
+</div>
+<app-contato-search></app-contato-search>

@@ -1,0 +1,16 @@
+<h2>Contatos</h2>
+<h3>Criar Contato</h3>
+<div>
+  <label>Nome:</label> <input #contatoName  />
+  <label>E-mail:</label> <input #contatoEmail  />
+  <label>Celular:</label> <input #contatoMobile />
+  <button (click)="add(contatoName.value, contatoEmail.value, contatoMobile.value); contatoName.value='';contatoEmail.value=''; contatoMobile.value=''">
+      Add
+  </button>
+</div>
+
+
+
+
+
+

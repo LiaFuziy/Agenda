@@ -1,0 +1,23 @@
+<div *ngIf="contato">
+    <h2>Editor de contato</h2>
+    <h3>{{contato.name}} </h3>
+    <div><label>id: </label>{{contato.id}}</div>
+    <div>
+    <label>Nome: </label>
+    <input [(ngModel)]="contato.name" placeholder="name"/>
+    </div>
+    <div>
+    <label>E-mail: </label>
+    <input [(ngModel)]="contato.email" placeholder="email"/>
+    </div>
+    <div>
+    <label>Celular: </label>
+    <input [(ngModel)]="contato.mobile" placeholder="mobile"/>
+    </div>
+</div>
+
+<div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="save()">Salvar</button>
+</div>
+

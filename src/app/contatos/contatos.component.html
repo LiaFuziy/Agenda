@@ -1,0 +1,20 @@
+<h2>Contatos</h2>
+
+
+  <ul class="contatos">
+      <li *ngFor="let contato of contatos"
+      [class.selected]="contato === selectedContato"
+      (click)="onSelect(contato)"
+      (click)="goToDetail()"
+      >
+
+      <span class="badge">{{contato.id}}</span> {{contato.name}}
+      <button class="delete"
+      (click)="delete(contato); $event.stopPropagation()">x</button>
+      </li>
+  </ul>
+
+
+
+
+
